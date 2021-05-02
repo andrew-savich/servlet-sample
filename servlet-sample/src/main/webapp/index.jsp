@@ -1,7 +1,17 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <body>
-<h2>Hello World!</h2>
-<a href="http://localhost:8080/servlet-sample/hello">Get Servlet response</a>
-<a href="http://localhost:8080/servlet-sample/hello2">Get Servlet response2</a>
+	<h2>Hello Servlet!</h2>
+
+	<c:if test="${userNotFound != null}">User not found, try again!<br>
+	</c:if>
+
+	<form action="/login" method="GET">
+		Login: <input type="text" name="login"> <br /> Password: <input
+			type="password" name="password" /> <input type="submit"
+			value="Submit" />
+	</form>
+
+
 </body>
 </html>

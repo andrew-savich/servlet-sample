@@ -43,7 +43,7 @@ public class ListUserService implements UserService {
 
 	@Override
 	public void deleteUser(Integer id) {
-		User toBeDelete = users.stream().filter(u -> u.getID().equals(id)).findAny().orElse(null);
+		User toBeDelete = users.stream().filter(u -> u.getId().equals(id)).findAny().orElse(null);
 		users.remove(toBeDelete);
 	}
 

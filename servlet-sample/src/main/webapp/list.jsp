@@ -19,12 +19,12 @@
 			</tr>
 		</thead>
 		<tbody>
-			<c:forEach items="users" var="user">
+			<c:forEach items="${users}" var="user">
 				<tr>
 					<th scope="row">${user.id}</th>
 					<td>${user.login}</td>
-					<td>${user.name}</td>
-					<td>@${user.role}</td>
+					<td>${user.firstName}</td>
+					<td>${user.role}</td>
 				</tr>
 			</c:forEach>
 

@@ -33,6 +33,6 @@ public class LoginServlet extends HttpServlet {
 		}
 
 		req.getSession().setAttribute("user", userByLogin);
-		req.getServletContext().getRequestDispatcher("/list.jsp").forward(req, resp);
+		req.getServletContext().getRequestDispatcher("/userList.jsp").forward(req, resp);
 	}
 }

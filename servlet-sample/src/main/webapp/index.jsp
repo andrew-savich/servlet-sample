@@ -6,7 +6,7 @@
 	<c:if test="${userNotFound != null}">User not found, try again!<br>
 	</c:if>
 
-	<form action="/login" method="GET">
+	<form action="/servlet-sample/login" method="GET">
 		Login: <input type="text" name="login"> <br /> Password: <input
 			type="password" name="password" /> <input type="submit"
 			value="Submit" />

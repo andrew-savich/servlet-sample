@@ -16,6 +16,7 @@
 				<th scope="col">Login</th>
 				<th scope="col">Name</th>
 				<th scope="col">Role</th>
+				<th scope="col">Actions</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -25,6 +26,12 @@
 					<td>${user.login}</td>
 					<td>${user.firstName}</td>
 					<td>${user.role}</td>
+					<td>
+						<form action="/servlet-sample/admin/userdelete" method="GET">
+							<input type="text" hidden="true" name="id" value="${user.id}">
+							<input class="btn btn-primary" type="submit" value="Delete" />
+						</form>
+					</td>
 				</tr>
 			</c:forEach>
 

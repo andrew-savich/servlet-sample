@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<h2>Welcom ${sessionScope.user.firstName}!</h2>
+	<h2>Welcome ${sessionScope.user.firstName}!</h2>
 	<table class="table">
 		<thead>
 			<tr>
@@ -37,6 +37,11 @@
 
 		</tbody>
 	</table>
+
+	<c:if test="${noPerm != null}">
+		<div class="alert alert-danger" role="alert">You don't have
+			permissions to perform this action</div>
+	</c:if>
 
 
 </body>

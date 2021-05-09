@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<h2>User List</h2>
+	<h2>Welcom ${sessionScope.user.firstName}!</h2>
 	<table class="table">
 		<thead>
 			<tr>
